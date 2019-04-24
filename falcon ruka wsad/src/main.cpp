@@ -16,9 +16,9 @@
 int motorr = 0;
 int motorl = 0;
 
-int s1 = 100;
+int s0 = 90;
+int s1 = 90;
 int s2 = 90;
-int s3 = 555;
 
 rb::Manager* man = nullptr;
 
@@ -32,21 +32,23 @@ void setup() {
     Serial.begin(115200);
 
     //Servo 0
-    servo0.attach(35);
+    servo0.attach(27);
     servo0.write(90);
     //Servo 1
-    servo1.attach(32);
+    servo1.attach(25);
     servo1.write(s1);
     //Servo 2
     servo2.attach(33);
     servo2.write(s2);
     //Servo 3
-    servo3.attach(25);
+    servo3.attach(32);
     servo3.write(90);
 }
 
 
-void loop() {
+void loop()
+{
+    servo0.write(s0);
     servo1.write(s1);
     servo2.write(s2);
 
@@ -71,17 +73,17 @@ void loop() {
                 break;
             case 'u':
                 servo3.write(40);
-                s3 = 666;
+
                 break;
             case 'i':
                 servo3.write(170);
-                s3 = 777;
+
                 break;
             case 'j':
-            if (s2<=181)
-            {
-              s2 = s2 + 2;
-            }
+                if (s2<=181)
+                {
+                  s2 = s2 + 2;
+                }
                 break;
             case 'n':
                 if (s2>0)
@@ -101,6 +103,18 @@ void loop() {
                   s1 = s1 - 2;
                 }
                 break;
+            case 'c':
+                if (s0<=180)
+                {
+                  s0 = s0 + 2;
+                }
+                 break;
+            case 'v':
+                if (s0>0)
+                {
+                  s0 = s0 - 2;
+                }
+                  break;
             //  case '0':
              // man->setMotors().power(MOTOR, -10)
              //                 .set();
@@ -123,6 +137,8 @@ void loop() {
        Serial.println(motorl);
        Serial.println('/n');
        Serial.println(motorr);
+       Serial.println('/n');
+       Serial.println(s0);
        Serial.println('/n');
        Serial.println(s1);
        Serial.println('/n');
