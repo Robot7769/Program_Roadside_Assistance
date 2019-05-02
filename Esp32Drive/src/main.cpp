@@ -11,18 +11,22 @@ void setup() {
 
   Serial.println("Starting");
   odrive.run_state(0, ODriveArduino::AXIS_STATE_FULL_CALIBRATION_SEQUENCE, true);
+  odrive.run_state(1, ODriveArduino::AXIS_STATE_FULL_CALIBRATION_SEQUENCE, true);
   odrive.run_state(0, ODriveArduino::AXIS_STATE_CLOSED_LOOP_CONTROL, true);
+  odrive.run_state(1, ODriveArduino::AXIS_STATE_CLOSED_LOOP_CONTROL, true);
 }
 
 void loop() {
   Serial.println("Going up");
-  for (int i = 0; i != 100000; i += 100) {
+  for (int i = 0; i != 1000; i += 100) {
     odrive.SetPosition(0, i);
+    odrive.SetPosition(1, i);
     delay(1);
   }
   Serial.println("Going down");
-  for (int i = 100000; i != 0; i -= 100) {
+  for (int i = 1000; i != 0; i -= 100) {
     odrive.SetPosition(0, i);
+    odrive.SetPosition(1, i);
     delay(1);
   }
 }

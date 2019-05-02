@@ -14,7 +14,6 @@
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\esp_http_client
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\esp_http_server
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\esp_https_ota
--IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\esp_https_server
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\esp_ringbuf
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\ethernet
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\expat
@@ -47,7 +46,6 @@
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\tcp_transport
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\tcpip_adapter
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\ulp
--IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\unity
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\vfs
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\wear_levelling
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\tools\sdk\include\wifi_provisioning
@@ -67,7 +65,7 @@
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\BLE\src
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\BluetoothSerial\src
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\DNSServer\src
--IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\EEPROM
+-IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\EEPROM\src
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\ESP32\src
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\ESPmDNS\src
 -IC:\Users\PC01\.platformio\packages\framework-arduinoespressif32\libraries\FFat\src
@@ -95,7 +93,7 @@
 -IC:\Users\PC01\.platformio\packages\tool-unity
 -IC:\Users\PC01\Desktop\HONZA\PROGRAMOVÁNÍ\Vyvojovy_diagram\Esp32Drive\include
 -IC:\Users\PC01\Desktop\HONZA\PROGRAMOVÁNÍ\Vyvojovy_diagram\Esp32Drive\src
--DPLATFORMIO=30606
+-DPLATFORMIO=30607
 -DARDUINO_ESP32_DEV
 -DESP32
 -DESP_PLATFORM
