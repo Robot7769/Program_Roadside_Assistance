@@ -1,2 +1,11 @@
---modeláøské motory mají pøevážnì 7 magnetických polí
---M--kola vytisknou znovu se žlábkem, aby náramek na ruku který je na kole lépe držel
+--modeláøské motory mají pøevážnì 7 magnetických parù magnetù (poèet magnetù / 2)
+
+--M--kola vytisknou znovu se žlábkem, aby náramek na ruku který je na kole lépe držel. místo zkosení co tam máš se udìlá na každé stravì výstupek 0,5mm na každé stanì. profil kola viz. obrázek  
+
+--enkodér bez potisku funguje špatnì (honza starší nám dal nový enkodér)
+
+--kalibrace se teï nemusí provádìt celá staèí jen kalibrovat pozice magnetù enkodérù ku pozicí fází motorù
+
+ 
+
+
