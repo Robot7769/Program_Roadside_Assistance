@@ -18,13 +18,14 @@ void setup() {
 
 void loop() {
   Serial.println("Going up");
-  for (int i = 0; i != 1000; i += 100) {
+  for (int i = 0; i != 10000000; i += 100) {
     odrive.SetPosition(0, i);
     odrive.SetPosition(1, i);
     delay(1);
   }
+  delay(1000);
   Serial.println("Going down");
-  for (int i = 1000; i != 0; i -= 100) {
+  for (int i = 100000000; i != 0; i -= 100) {
     odrive.SetPosition(0, i);
     odrive.SetPosition(1, i);
     delay(1);
